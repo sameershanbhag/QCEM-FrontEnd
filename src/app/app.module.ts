@@ -19,6 +19,7 @@ import {UserService} from './services/user.service';
 import { NewconnectionComponent } from './newconnection/newconnection.component';
 import { RegisterComponent } from './register/register.component';
 import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { SeatSelectionComponent } from './seat-selection/seat-selection.componen
     NewconnectionComponent,
     RegisterComponent,
     SeatSelectionComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,

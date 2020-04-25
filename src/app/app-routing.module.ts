@@ -6,8 +6,9 @@ import { ConnectionComponent } from './connection/connection.component';
 import { LoginComponent } from './login/login.component';
 import { SavedconnectionsComponent } from './savedconnections/savedconnections.component';
 import { NewconnectionComponent } from './newconnection/newconnection.component';
-import {RegisterComponent} from './register/register.component';
-import {SeatSelectionComponent} from './seat-selection/seat-selection.component';
+import { RegisterComponent } from './register/register.component';
+import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'savedconnections', component: SavedconnectionsComponent},
   { path: 'newconnection', component: NewconnectionComponent},
   { path: 'register', component: RegisterComponent},
-  { path: 'seat-selection', component: SeatSelectionComponent}
+  { path: 'seat-selection', component: SeatSelectionComponent},
+  { path: 'logout', component: LogoutComponent}
 ];
 
 @NgModule({

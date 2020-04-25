@@ -23,7 +23,7 @@ export class UserService {
     this.storage.set(STORAGE_KEY, this.currentObject);
 
     if (this.storage.get(STORAGE_KEY)[0].length > 0) {
-      console.log(this.storage.get(STORAGE_KEY) || 'Local storage is empty');
+      // console.log(this.storage.get(STORAGE_KEY) || 'Local storage is empty');
       this._currentObject.next(true);
     }
 
@@ -36,6 +36,11 @@ export class UserService {
 
   getDetails(): Observable<boolean> {
     return this._currentObject.asObservable();
+  }
+
+  logOut() {
+    this.storage.clear();
+    this._currentObject.next(true);
   }
 
 }

@@ -18,6 +18,8 @@ export class NavbarComponent implements OnInit {
       if (this.userService.getUserDetails() && this.userService.getUserDetails().length > 0) {
         this.User = JSON.parse(this.userService.getUserDetails()[0]);
         this.isLoggedIn = (this.userService.getUserDetails()[1] === 'true');
+      } else {
+        this.isLoggedIn = false;
       }
     });
   }
