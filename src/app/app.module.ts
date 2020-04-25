@@ -20,6 +20,8 @@ import { NewconnectionComponent } from './newconnection/newconnection.component'
 import { RegisterComponent } from './register/register.component';
 import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
 import { LogoutComponent } from './logout/logout.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -36,6 +38,8 @@ import { LogoutComponent } from './logout/logout.component';
     RegisterComponent,
     SeatSelectionComponent,
     LogoutComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
