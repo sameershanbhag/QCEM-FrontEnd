@@ -29,7 +29,7 @@ export class NewconnectionComponent implements OnInit {
   }
 
   onSubmit() {
-    const userId = JSON.parse(this.userService.getUserDetails()[0]).UserID;
+    const userId = JSON.parse(this.userService.getUserDetails()[0])._UserID;
     console.log(userId);
     this.dataService.addConnection(this.NewConnectionForm.value, userId).subscribe((data: any)  => {
       if (Object.keys(data).length > 0 ){
